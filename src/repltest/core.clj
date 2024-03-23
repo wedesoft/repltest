@@ -1,5 +1,5 @@
 (ns repltest.core
-  "nREPl demo"
+  "nREPL demo"
   (:gen-class))
 
 (require '[nrepl.server :refer [start-server stop-server]])

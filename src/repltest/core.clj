@@ -7,10 +7,14 @@
 
 (def t (atom 0))
 
+(defn display
+  [value]
+  (println value))
+
 (defn -main
   "nREPL demo"
   [& _args]
   (while true
-         (println (swap! t inc))
+         (display (swap! t inc))
          (Thread/sleep 1000))
   (System/exit 0))
